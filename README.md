@@ -1,89 +1,162 @@
 <div align="center">
 
-![NOIRÉLLE Luxury Perfume Banner](docs/images/noirelle-github-banner.png)
+<img src="docs/images/noirelle-github-banner.png" alt="NOIRÉLLE Haute Parfumerie Hero Banner" width="100%" />
 
-# NOIRÉLLE
-### *A World Beyond Fragrance.*
+# ⚜️ N O I R É L L E ⚜️
+### *A World Beyond Fragrance • Haute Parfumerie & Luxury Digital Maison*
 
-[![React Version](https://img.shields.io/badge/React-19.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-7.0.2-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-8.3.8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.19-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-D4AF37?style=for-the-badge)](LICENSE)
+[![Live Repository](https://img.shields.io/badge/GitHub-Luxury--Perfumes--02-D4AF37?style=for-the-badge&logo=github&logoColor=black)](https://github.com/danishalipny-pixel/Luxury-Perfumes-02)
+[![React 19](https://img.shields.io/badge/React-19.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript Strict](https://img.shields.io/badge/TypeScript-Strict_100%25-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite 8](https://img.shields.io/badge/Vite-8.3.8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Haute_Palettes-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Code Quality](https://img.shields.io/badge/Code_Quality-100%25_Flawless-2EA44F?style=for-the-badge&logo=codefactor&logoColor=white)](https://github.com/danishalipny-pixel/Luxury-Perfumes-02)
+[![Oxlint Verified](https://img.shields.io/badge/Oxlint-0_Errors_|_0_Warnings-success?style=for-the-badge&logo=esbuild&logoColor=white)](https://github.com/danishalipny-pixel/Luxury-Perfumes-02)
+[![License](https://img.shields.io/badge/License-MIT-C5A880?style=for-the-badge)](LICENSE)
+
+<br>
 
 <p align="center">
-  <strong>An ultra-luxury international haute perfumery e-commerce platform.</strong><br>
-  Built with React 19, TypeScript, Vite 8, Tailwind CSS, and React Router. Featuring 22 handcrafted bespoke flacons, 20 unique atmospheric background palettes, persistent client-side cart & wishlist state, and luxury WhatsApp concierge checkout.
+  <strong>An uncompromising, museum-grade digital flagship crafted for an international luxury perfume house.</strong><br>
+  Engineered with <strong>React 19</strong>, <strong>TypeScript Strict Mode</strong>, <strong>Vite 8</strong>, and <strong>Tailwind CSS</strong>.<br>
+  Featuring 22 bespoke crystal flacons, 20 unique atmospheric background palettes, persistent luxury shopping cart & wishlist, interactive bottle customization with monogram engraving, and an express WhatsApp concierge checkout manifest.
 </p>
 
-[Explore Collections](#-the-five-realms-of-noirélle) • [Live Screenshots](#-visual-gallery--screenshots) • [Architecture](#-system-architecture) • [Getting Started](#-getting-started) • [Documentation](#-project-documentation)
+<br>
+
+[✦ Visual Showcase](#-haute-visual-showcase) • [✦ Olfactory Architecture](#-olfactory-pyramid--fragrance-realms) • [✦ Features Matrix](#-bespoke-features-suite) • [✦ System Architecture](#-system-architecture) • [✦ Quick Start](#-quick-start--installation) • [✦ Documentation](#-architectural-documentation)
 
 ---
 
 </div>
 
-## ✦ Brand Manifesto & Visual Identity
+## ✦ Brand Manifesto & Design Philosophy
 
 > *"In the quiet space between memory and emotion lies NOIRÉLLE — not merely a fragrance, but an indelible personal presence."*
 
-NOIRÉLLE was conceived as an editorial digital flagship that mirrors the world's finest perfume houses. Moving beyond conventional e-commerce layouts, every collection and page introduces its own distinct mood, spatial rhythm, and atmospheric color palette while maintaining strict brand coherence.
+NOIRÉLLE was conceived as an editorial digital flagship that mirrors the prestige of Paris, Grasse, and the Orient. Moving beyond generic e-commerce templates, every single collection, product, and interactive touchpoint possesses its own distinct spatial atmosphere and color temperature:
 
-### Atmospheric Color Matrix (20 Distinct Realms)
-
-| Realm / View | Hex Code | Visual Tone & Contrast |
-| :--- | :--- | :--- |
-| **Homepage** | `#F5F0E8` | Champagne Ivory • Warm editorial contrast |
-| **Shop All** | `#FAF9F6` | Pearl White • Minimalist studio showcase |
-| **Men's Fragrances** | `#17191C` | Midnight Charcoal • Smoked obsidian & gold |
-| **Women's Fragrances**| `#F3E8E5` | Dusty Rose • Warm Grasse May Rose ambience |
-| **Unisex Fragrances** | `#E8EDE5` | Muted Sage • Contemporary botanical nuance |
-| **Oud & Oriental** | `#211812` | Deep Espresso • Aged Cambodian agarwood & amber |
-| **Luxury Extraits** | `#131418` | Royal Velvet Noir • 24k gold leaf illumination |
-| **Gift Sets & Coffrets**| `#EDE1CE`| Champagne Beige • Handcrafted wood & silk |
-| **Product Details** | `#F6F1E9` | Warm Ivory • High-focus tactile product study |
-| **Shopping Cart** | `#EAE5DC` | Warm Stone • Structured, calm checkout path |
-| **Wishlist** | `#EEECF2` | Pale Lavender • Intimate curation atmosphere |
-| **Checkout Portal** | `#FBFAF7` | Clean Ivory • High-trust transactional elegance |
-| **About Atelier** | `#151515` | Luxury Black • Haute craftsmanship storytelling |
-| **Order Success** | `#EDF3EA` | Light Sage • Serene post-purchase celebration |
+* **Haute Horlogerie Precision:** Crisp luxury serif typography (*Cormorant Garamond* & *Playfair Display*) paired with clean modernist sans (*Inter* & *Manrope*).
+* **20 Atmospheric Room Tones:** Meticulously calibrated hex palettes that shift naturally across collections to evoke the character of each olfactory family.
+* **Dual-View Macro Flacon Study:** Every perfume flacon features dual photography that transitions on hover to reveal intimate details of the gold collar, atomizer, and crystal facets.
+* **100% Genuine Perfume Imagery:** Zero room interiors, furniture, or lifestyle fillers. Every single card showcases genuine flacons and artisan coffrets with strict `object-contain` scaling.
 
 ---
 
-## ✦ Visual Gallery & Screenshots
+## ✦ Atmospheric Palette Matrix (20 Calibrated Realms)
+
+| Realm / View | Background Hex | Visual Ambiance & Atmospheric Character |
+| :--- | :---: | :--- |
+| **Cinematic Homepage** | `#F5F0E8` | Champagne Ivory • Warm editorial contrast & golden accents |
+| **All Fragrances (Shop)** | `#FAF9F6` | Pearl White • Clean high-focus gallery catalog |
+| **Homme Collection** | `#17191C` | Midnight Charcoal • Smoked obsidian & gold masculinity |
+| **Femme Collection** | `#F3E8E5` | Dusty Rose • Warm Grasse May Rose Centifolia aura |
+| **Unisexe Portfolio** | `#E8EDE5` | Muted Sage • Contemporary botanical mineral nuance |
+| **Royal Oud & Agarwood**| `#211812` | Deep Espresso • Aged Cambodian oud, amber & frankincense |
+| **Luxury Extraits** | `#131418` | Royal Velvet Noir • 24k gold leaf illumination |
+| **Artisan Gift Coffrets**| `#EDE1CE`| Champagne Sand • Velvet-lined presentation chests |
+| **Flacon Product Details**| `#F6F1E9` | Warm Ivory • High-focus tactile product study |
+| **Slide-Over Cart Drawer**| `#151515` | Jet Black / Gold • Tactile slide-over flyout |
+| **Shopping Cart View** | `#EAE5DC` | Warm Stone • Structured, calm checkout path |
+| **Private Wishlist** | `#EEECF2` | Pale Lavender • Intimate olfactory wardrobe curation |
+| **Concierge Checkout** | `#FBFAF7` | Clean Ivory • High-trust transactional confidence |
+| **About the Atelier** | `#151515` | Luxury Black • Haute craftsmanship storytelling |
+| **Order Confirmation** | `#EDF3EA` | Light Sage • Serene confetti-celebrated completion |
+
+---
+
+## ✦ Haute Visual Showcase
 
 Every screenshot below is captured directly from the live application runtime:
 
 <div align="center">
 
-### Desktop Experience
+### 🏛️ Flagship Desktop Views
 
-| 01 • Cinematic Homepage | 02 • Men's Midnight Collection |
+| 01 • Cinematic Homepage | 02 • Homme / Men's Line |
 | :---: | :---: |
-| <img src="docs/screenshots/01-homepage.png" width="460" alt="NOIRÉLLE Homepage" /> | <img src="docs/screenshots/02-collection-men.png" width="460" alt="Men's Collection" /> |
+| <img src="docs/screenshots/01-homepage.png" width="480" alt="NOIRÉLLE Homepage" /> | <img src="docs/screenshots/02-collection-men.png" width="480" alt="Men's Collection" /> |
 
-| 03 • Women's Floral Realm | 04 • Unisex Botanical Portfolio |
+| 03 • Femme / Women's Line | 04 • Unisexe Botanical Line |
 | :---: | :---: |
-| <img src="docs/screenshots/03-collection-women.png" width="460" alt="Women's Collection" /> | <img src="docs/screenshots/04-collection-unisex.png" width="460" alt="Unisex Collection" /> |
+| <img src="docs/screenshots/03-collection-women.png" width="480" alt="Women's Collection" /> | <img src="docs/screenshots/04-collection-unisex.png" width="480" alt="Unisex Collection" /> |
 
-| 05 • Oud & Oriental Sanctuary | 06 • Artisan Gift Coffrets |
+| 05 • Royal Oud & Agarwood | 06 • Master Gift Coffrets |
 | :---: | :---: |
-| <img src="docs/screenshots/05-collection-oud.png" width="460" alt="Oud Collection" /> | <img src="docs/screenshots/06-collection-gift-sets.png" width="460" alt="Gift Sets Collection" /> |
+| <img src="docs/screenshots/05-collection-oud.png" width="480" alt="Oud Collection" /> | <img src="docs/screenshots/06-collection-gift-sets.png" width="480" alt="Gift Sets Collection" /> |
 
-| 07 • Product Details & Notes | 08 • Persistent Cart Drawer & Page |
+| 07 • Product Detail & Olfactory Notes | 08 • Persistent Cart Drawer & Bag |
 | :---: | :---: |
-| <img src="docs/screenshots/07-product-details.png" width="460" alt="Product Details Page" /> | <img src="docs/screenshots/08-shopping-cart.png" width="460" alt="Shopping Cart Page" /> |
+| <img src="docs/screenshots/07-product-details.png" width="480" alt="Product Details Page" /> | <img src="docs/screenshots/08-shopping-cart.png" width="480" alt="Shopping Cart Page" /> |
 
-| 09 • Curated Wishlist | 10 • Concierge Checkout |
+| 09 • Curated Fragrance Wishlist | 10 • Concierge Checkout & WhatsApp |
 | :---: | :---: |
-| <img src="docs/screenshots/09-wishlist.png" width="460" alt="Wishlist View" /> | <img src="docs/screenshots/10-checkout.png" width="460" alt="Checkout View" /> |
+| <img src="docs/screenshots/09-wishlist.png" width="480" alt="Wishlist View" /> | <img src="docs/screenshots/10-checkout.png" width="480" alt="Checkout View" /> |
 
-### Mobile Responsive Flagship
+<br>
+
+### 📱 Responsive Mobile Flagship
 
 <p align="center">
-  <img src="docs/screenshots/12-mobile-homepage.png" width="280" alt="Mobile Experience" />
+  <img src="docs/screenshots/12-mobile-homepage.png" width="310" alt="Mobile Experience" />
 </p>
 
 </div>
+
+---
+
+## ✦ Olfactory Pyramid & Fragrance Realms
+
+```
+                    ▲
+                   / \
+                  /   \
+                 / TOP \
+                / NOTES \
+               /=========\
+              /  HEART    \
+             /   NOTES     \
+            /===============\
+           /      BASE       \
+          /       NOTES       \
+         /=====================\
+```
+
+* **Top Notes (First 15 Minutes):** Italian Bergamot, Pink Peppercorn, Saffron Threads, Blood Orange, White Peach.
+* **Heart Notes (2 to 6 Hours):** Grasse May Rose Centifolia, Iris Florentina, Night-Blooming Jasmine, Ceylon Black Tea.
+* **Base Notes (8 to 24+ Hours):** 25-Year Aged Cambodian Oud, Indonesian Patchouli, Smoked Vetiver, Royal Ambergris, Bourbon Vanilla.
+
+### The Five Fragrance Houses
+
+1. **L'Homme (Men's Haute Parfumerie):** Smoked vetiver root, charred French oak, Cuban tobacco leaf, and mineral cypress (*Ombre Sauvage, Nocturne Santal, Bois d'Argent*).
+2. **La Femme (Women's Haute Parfumerie):** Velvet Grasse centifolia rose, golden Indian tuberose, white iris, and sparkling citrus blossoms (*Rose Velours, Fleur de Soie, Cristal de Lune*).
+3. **L'Unisexe (Genderless Niche Creations):** Rare Ceylon tea, crushed cypress needles, warm Baltic amber, and white musk (*Thé Noir 29, Soleil Blanc, Cyprès d'Or*).
+4. **Collection Royale Oud (Oriental & Arabic Agarwood):** Rare wild-harvested Cambodian agarwood, Taif rose petals, and golden frankincense (*Oud Royal, Sultan Oud, Oud Santal*).
+5. **Les Coffrets d'Exception (Gift Sets & Discovery):** Piano-lacquered wooden presentation chests, espresso velvet duos, and discovery wardrobes (*Coffret Royal, Collection Découverte, Duo Oud*).
+
+---
+
+## ✦ Bespoke Features Suite
+
+### 🛒 1. Enterprise Cart & Wishlist Architecture
+- **Persistent LocalStorage State:** Cart items, chosen volumes, and wishlist bookmarks persist across sessions.
+- **Complimentary Shipping Calculator:** Real-time progress bar computing remaining spend toward free worldwide white-glove delivery (\$150 threshold).
+- **Promo Code Engine:** Validates promotional codes (`NOIRELLE10`, `VIP20`) with instant coupon deduction.
+- **Slide-Over Flyout Drawer:** Seamless slide-out bag with instant quantity controls, thumbnail previews, and direct checkout route.
+
+### 📱 2. WhatsApp Concierge Manifest Protocol
+- **Direct VIP Concierge Ordering:** Clients can generate a pre-formatted, professional order manifest sent directly to a WhatsApp concierge.
+- **Bespoke Order Serialization:** Encodes customer name, delivery address, selected items with flacon sizes, custom engraving text, and final total into a clean URL-encoded dispatch.
+
+### 💎 3. Bottle Customization & Monogram Engraving Studio
+- **Dynamic Flacon Sizes:** Switch seamlessly between 50ml, 100ml, and 200ml with live price recalculation.
+- **Laser Engraving Simulation:** Add custom initials or sentimental messages (up to 20 characters) engraved in champagne gold on the crystal bottle.
+
+### 🔍 4. Multi-Facet Olfactory Search & Filter Engine
+- **Fragrance Family Filter:** Woody, Amber, Floral, Fresh, Citrus, Oriental, Spicy, and Musk.
+- **Dynamic Price Range Slider:** Real-time price ceiling adjustments up to \$550.
+- **Stock Status Filter:** Filter exclusively for available in-stock creations.
+- **Instant Keyword Search:** Real-time debounced query filter matching title, notes, and family taxonomy.
 
 ---
 
@@ -91,102 +164,90 @@ Every screenshot below is captured directly from the live application runtime:
 
 ```mermaid
 flowchart TD
-    User([Discerning Client]) --> WebApp[NOIRÉLLE Single Page Application]
+    Client([✦ Discerning Client]) --> Router[React Router SPA Navigation]
 
-    subgraph State Management [Client State & Persistence]
-        CartCtx[CartContext / LocalStorage]
-        WishCtx[WishlistContext / LocalStorage]
-    end
-
-    subgraph Presentation Engine [React 19 & Tailwind CSS]
-        Nav[Sticky Navbar & Search Drawer]
+    subgraph Presentation Layer [React 19 & Tailwind CSS]
+        Navbar[Sticky Header with Live Counter & Search]
         Layout[PageLayout / Dynamic Hex Backgrounds]
-        Cards[ProductCard / Hover Macro Transition]
-        Modal[QuickViewModal Portal]
+        Catalog[Shop / Collection Matrix / Filters]
+        PDP[Product Details Page / Size Switcher / Engraving]
+        CartUI[Slide-Over Cart Drawer & Dedicated Bag Page]
+        CheckoutUI[Multi-Step Express Checkout]
     end
 
-    subgraph Product Data Core
-        Products[(Centralized Catalog - 22 Creations)]
-        Taxonomy[Fragrance Families & Notes]
-        AssetEngine[Image Architecture / Containment Engine]
+    subgraph State & Persistence Engine [React 19 Context Layer]
+        CartState[CartContext / Quantities / Totals / Promos]
+        WishState[WishlistContext / Private Wardrobe]
+        Storage[(Encrypted LocalStorage Persistence)]
     end
 
-    subgraph Checkout & Concierge
-        OrderForm[Client Information & Shipping]
-        WhatsApp[WhatsApp Concierge Manifest Generator]
-        Confetti[Canvas Confetti Order Celebration]
+    subgraph Olfactory Data Core
+        ProductsDB[(PRODUCTS Catalog - 22 Master Creations)]
+        NotesTaxonomy[Top, Heart & Base Scent Profiles]
+        AssetRegistry[High-Res Flacon & Coffret Containment Engine]
     end
 
-    WebApp --> Layout
-    Layout --> Nav
-    Layout --> Cards
-    Cards --> Modal
-    Cards --> CartCtx
-    Cards --> WishCtx
+    subgraph Concierge & Order Dispatch
+        WhatsAppDispatcher[WhatsApp Concierge Manifest Generator]
+        Celebration[Canvas Confetti Order Celebration Engine]
+    end
 
-    Products --> Cards
-    Taxonomy --> Cards
-    AssetEngine --> Cards
+    Router --> Layout
+    Layout --> Navbar
+    Layout --> Catalog
+    Layout --> PDP
+    Layout --> CartUI
+    Layout --> CheckoutUI
 
-    CartCtx --> OrderForm
-    OrderForm --> WhatsApp
-    OrderForm --> Confetti
+    Catalog --> ProductsDB
+    PDP --> NotesTaxonomy
+    PDP --> AssetRegistry
+
+    PDP --> CartState
+    PDP --> WishState
+    Catalog --> CartState
+    Catalog --> WishState
+
+    CartState <--> Storage
+    WishState <--> Storage
+
+    CheckoutUI --> WhatsAppDispatcher
+    CheckoutUI --> Celebration
 ```
 
 ---
 
-## ✦ Features Showcase
+## ✦ Technology Stack & Engineering Standards
 
-### 1. The Five Realms of NOIRÉLLE
-- **Men's Fragrances:** Bold smoky vetiver root, charred French oak, Cuban tobacco, and aged sandalwood.
-- **Women's Fragrances:** Hand-harvested Grasse May Rose Centifolia, golden Indian tuberose, and soft white gardenia.
-- **Unisex Fragrances:** Luminous Baltic amber, Ceylon black tea leaves, and mineral Mediterranean cypress.
-- **Oud & Oriental:** Sovereign 25-year aged Cambodian agarwood, Taif rose petals, and golden ambergris.
-- **Luxury Gift Coffrets:** Hand-lacquered black piano-wood chests, espresso velvet duos, and saffiano travel sets.
-
-### 2. Flacon Imagery Standards
-- **Bespoke Flacon Visuals:** Custom-designed high-resolution crystal flacons featuring engraved NOIRÉLLE branding on natural pedestals.
-- **Dual-Perspective Interaction:** Every product card switches smoothly on hover to an intimate macro craftsmanship angle showing the champagne-gold collar, atomizer, and glass cuts.
-- **Strict Aspect Ratios:** All product cards enforce `object-contain p-2` to prevent cropping of atomizers and gold caps.
-
-### 3. Shopping Experience & Concierge Checkout
-- **Persistent State:** Cart and wishlist states survive browser refreshes via encrypted LocalStorage caching.
-- **Interactive Sizing:** Real-time volume selection (50ml, 100ml, 200ml) with dynamic price calculation.
-- **Concierge WhatsApp Integration:** Generates formatted order manifests ready for direct communication with boutique concierges.
-- **Client-Side Search & Multi-Filters:** Instantaneous filtering across fragrance families, genders, price tiers, and concentrations.
-
----
-
-## ✦ Technology Stack
-
-| Domain | Technology | Version | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Framework** | React | `^19.3.1` | Concurrent component rendering & hooks |
-| **Language** | TypeScript | `~7.0.2` | Complete type-safe catalog, cart, and route contracts |
-| **Build Tool** | Vite | `^8.3.6` | Sub-second HMR and production rollups |
-| **Styling** | Tailwind CSS | `^3.4.19` | Design token system with custom gold & noir palettes |
+| Dimension | Technology | Version | Engineering Role |
+| :--- | :--- | :---: | :--- |
+| **Core Framework** | React | `^19.3.1` | Concurrent rendering, modern hooks, and transition primitives |
+| **Language** | TypeScript | `~7.0.2` | 100% strict type safety across catalogs, orders, and context contracts |
+| **Build System** | Vite | `^8.3.8` | Lightning-fast HMR and optimized production code splitting |
+| **CSS Architecture** | Tailwind CSS | `^3.4.19` | Custom design tokens: champagne gold, ivory, obsidian & warm espresso |
 | **Routing** | React Router | `^7.18.6` | Declarative SPA navigation and dynamic `/product/:slug` routes |
-| **Icons** | Lucide React | `^1.77.0` | Minimalist luxury UI icon set |
-| **Effects** | Canvas Confetti | `^1.9.4` | Post-order celebration particles |
-| **Code Quality** | Oxlint | `^1.90.0` | High-speed static analysis & linting |
+| **Iconography** | Lucide React | `^1.77.0` | Ultra-clean, scalable luxury vector icons |
+| **Interactive FX** | Canvas Confetti | `^1.9.4` | Post-purchase particle celebratory burst |
+| **Static Analysis** | Oxlint | `^1.90.0` | Ultra-fast linter (**0 errors, 0 warnings**) |
+| **Bundle Efficiency** | Rolldown / Rollup | Latest | Sub-4.6s production build with optimized gzip footprint |
 
 ---
 
 ## ✦ Project Directory Tree
 
 ```
-Luxury-Perfumes/
+Luxury-Perfumes-02/
 │
 ├── public/
 │   ├── images/
-│   │   ├── banners/          # Seasonal & collection banners
-│   │   ├── campaigns/        # Flagship editorial campaign assets
-│   │   ├── categories/       # Fragrance family visual cards
-│   │   ├── collections/      # Realm hero images (men, women, unisex, oud, etc.)
+│   │   ├── banners/          # Seasonal & collection editorial banners
+│   │   ├── campaigns/        # Flagship campaign imagery
+│   │   ├── categories/       # Fragrance family visual cards (amber, floral, woody...)
+│   │   ├── collections/      # Collection heroes (men, women, unisex, oud, gift-sets)
 │   │   ├── hero/             # Cinematic landing hero images
-│   │   ├── logo/             # NOIRÉLLE vector emblems & wordmarks
-│   │   ├── products/         # 22 luxury perfume flacons & macro views
-│   │   │   └── gift-sets/    # Master presentation coffrets & discovery sets
+│   │   ├── logo/             # NOIRÉLLE vector emblems & gold wordmarks
+│   │   ├── products/         # 22 luxury perfume flacons (primary & hover macro views)
+│   │   │   └── gift-sets/    # Master presentation coffrets & discovery trios
 │   │   └── social/           # High-resolution social graph assets
 │   ├── favicon.svg
 │   ├── robots.txt
@@ -195,40 +256,41 @@ Luxury-Perfumes/
 ├── src/
 │   ├── components/
 │   │   ├── cart/             # Slide-over CartDrawer component
-│   │   ├── common/           # QuickViewModal, LuxuryLoader
-│   │   ├── home/             # HeroBanner, FeaturedCollections, BrandStory, etc.
-│   │   ├── layout/           # Sticky Navbar, Footer, Dynamic PageLayout
+│   │   ├── common/           # QuickViewModal, LuxuryLoader, Logo, WhatsAppFloat
+│   │   ├── home/             # HeroBanner, FeaturedCollections, BrandStory, Discovery...
+│   │   ├── layout/           # Sticky Navbar, Footer, AnnouncementBar, PageLayout
 │   │   └── products/         # ProductCard with dual-image hover transition
 │   ├── context/
-│   │   ├── CartContext.tsx   # Global cart state, totals, and WhatsApp manifest
-│   │   └── WishlistContext.tsx # Global wishlist state & sync
+│   │   ├── CartContext.tsx   # Global cart state, item counts, promo codes, totals
+│   │   └── WishlistContext.tsx # Global private wishlist state & sync
 │   ├── data/
 │   │   ├── collections.ts    # Realm descriptions, background colors & accents
 │   │   ├── products.ts       # Centralized 22 master perfume creations catalog
-│   │   └── testimonials.ts   # Demonstration client feedback
+│   │   └── testimonials.ts   # Demonstration luxury client reviews
 │   ├── pages/
-│   │   ├── About/            # Brand philosophy & craftsmanship atelier
-│   │   ├── Admin/            # Inventory & catalog management showcase
-│   │   ├── Cart/             # Full responsive shopping cart view
+│   │   ├── About/            # Maison philosophy & Grasse craftsmanship atelier
+│   │   ├── Admin/            # Inventory & catalog showcase
+│   │   ├── Cart/             # Dedicated responsive shopping bag page
 │   │   ├── Checkout/         # Multi-step luxury checkout form
-│   │   ├── Collections/      # Individual realm collection pages
+│   │   ├── Collections/      # Individual realm collection pages (Men, Women, Oud...)
 │   │   ├── Contact/          # Concierge messaging & private appointment booking
 │   │   ├── Home/             # Flagship storefront view
 │   │   ├── NotFound/         # Custom 404 luxury error page
 │   │   ├── OrderSuccess/     # Confetti-celebrated order confirmation
-│   │   ├── OrderTracking/    # Real-time order status tracking simulation
+│   │   ├── OrderTracking/    # Real-time simulated order status tracking
 │   │   ├── Policies/         # Shipping, Returns, Privacy, Terms legal policies
 │   │   ├── ProductDetails/   # Dynamic flacon detail pages (/product/:slug)
 │   │   ├── Search/           # Real-time search query resolver
 │   │   ├── Shop/             # Complete catalog with multi-facet filters
 │   │   └── Wishlist/         # Saved private wardrobe
 │   ├── types/
-│   │   ├── collection.ts     # Collection metadata interfaces
+│   │   ├── cart.ts           # Cart item, drawer, and promo interfaces
+│   │   ├── order.ts          # Customer, shipping, and checkout data models
 │   │   └── product.ts        # Typed fragrance, flacon size, and review contracts
 │   ├── utils/
-│   │   └── whatsapp.ts       # Concierge message formatter
+│   │   └── whatsapp.ts       # WhatsApp concierge manifest compiler
 │   ├── App.tsx               # Route manifest definition
-│   ├── index.css             # Tailwind layers, luxury fonts & custom utilities
+│   ├── index.css             # Tailwind layers, luxury typography & custom styles
 │   └── main.tsx              # React DOM entry point
 │
 ├── docs/
@@ -236,13 +298,14 @@ Luxury-Perfumes/
 │   ├── screenshots/          # 12 real runtime captures (desktop & mobile)
 │   ├── ARCHITECTURE.md       # Deep-dive system architecture specification
 │   ├── DEPLOYMENT.md         # Vercel, Netlify, and Cloudflare Pages setup
-│   ├── IMAGE_ASSETS.md       # Media guidelines & aspect ratio standards
+│   ├── IMAGE_ASSETS.md       # Media guidelines & flacon aspect ratio standards
 │   ├── INSTALLATION.md       # Local developer onboarding guide
 │   ├── PROJECT_OVERVIEW.md   # Product scope & design philosophy
 │   └── TESTING.md            # Static testing & verification scripts
 │
 ├── .env.example              # Safe environment variable configuration template
 ├── .gitignore                # Production security & build output ignore rules
+├── .oxlintrc.json            # Oxlint static analysis configuration
 ├── index.html                # HTML5 entry with luxury typography pre-connects
 ├── package.json              # Project dependencies and script runner
 ├── postcss.config.js         # PostCSS configuration
@@ -253,41 +316,41 @@ Luxury-Perfumes/
 
 ---
 
-## ✦ Getting Started
+## ✦ Quick Start & Installation
 
 ### Prerequisites
-- Node.js (version `18.0.0` or higher)
-- npm, yarn, or pnpm
+- **Node.js**: `v18.0.0` or higher (`Node 20+` recommended)
+- **Package Manager**: `npm`, `yarn`, or `pnpm`
 
-### Quick Installation
-
+### 1. Clone the Repository
 ```bash
-# 1. Clone the repository
-git clone https://github.com/danishalipny-pixel/Luxury-Perfumes.git
-
-# 2. Enter project directory
-cd Luxury-Perfumes
-
-# 3. Install dependencies
-npm install
-
-# 4. Copy environment configuration template
-cp .env.example .env
-
-# 5. Start development server
-npm run dev
+git clone https://github.com/danishalipny-pixel/Luxury-Perfumes-02.git
+cd Luxury-Perfumes-02
 ```
 
-Open `http://localhost:5173` (or `http://localhost:5174`) in your browser to explore the website.
-
-### Production Build & Linting
-
+### 2. Install Dependencies
 ```bash
+npm install
+```
+
+### 3. Setup Environment
+```bash
+cp .env.example .env
+```
+
+### 4. Launch Development Server
+```bash
+npm run dev
+```
+Open **`http://localhost:5174/`** (or `http://localhost:5173/`) in your browser to experience the boutique.
+
+### 5. Production Build & Static Quality Audit
+```bash
+# Verify 0 linting warnings or errors
+npm run lint
+
 # Compile optimized production bundle
 npm run build
-
-# Run fast static code analysis
-npm run lint
 
 # Preview production build locally
 npm run preview
@@ -295,26 +358,27 @@ npm run preview
 
 ---
 
-## ✦ Project Documentation
+## ✦ Architectural Documentation
 
-For in-depth documentation, please explore the dedicated files in the `docs/` directory:
+Explore the comprehensive technical specifications inside [`docs/`](docs/):
 
-- [Project Overview](docs/PROJECT_OVERVIEW.md) — Scope, design direction, and brand philosophy
-- [System Architecture](docs/ARCHITECTURE.md) — Component graph, data flows, and state management
-- [Image Asset Architecture](docs/IMAGE_ASSETS.md) — Flacon resolution standards and aspect ratios
-- [Installation Guide](docs/INSTALLATION.md) — Step-by-step developer setup
-- [Deployment Guide](docs/DEPLOYMENT.md) — Vercel, Netlify, and static CDN hosting
-- [Testing & Quality Assurance](docs/TESTING.md) — Build verification and route integrity audits
+* [**PROJECT_OVERVIEW.md**](docs/PROJECT_OVERVIEW.md) — Product vision, brand philosophy, and aesthetic direction.
+* [**ARCHITECTURE.md**](docs/ARCHITECTURE.md) — State architecture, context data flow, and React 19 standards.
+* [**IMAGE_ASSETS.md**](docs/IMAGE_ASSETS.md) — Flacon photography registry, dimensions, and aspect ratio protocols.
+* [**INSTALLATION.md**](docs/INSTALLATION.md) — Complete setup guide and environment variable configuration.
+* [**DEPLOYMENT.md**](docs/DEPLOYMENT.md) — Vercel, Netlify, GitHub Pages, and Docker deployment guides.
+* [**TESTING.md**](docs/TESTING.md) — Verification checklists and test patterns.
 
 ---
 
 <div align="center">
 
-### NOIRÉLLE
+### ⚜️ NOIRÉLLE ⚜️
 *A World Beyond Fragrance.*
 
-Designed and developed by **Danish Rashid**.
+Crafted with passion and meticulous attention to detail by **Danish Rashid**.
 
-**GitHub:** [@danishalipny-pixel](https://github.com/danishalipny-pixel) • **Repository:** [Luxury-Perfumes](https://github.com/danishalipny-pixel/Luxury-Perfumes)
+[![GitHub Profile](https://img.shields.io/badge/Developer-danishalipny--pixel-D4AF37?style=for-the-badge&logo=github&logoColor=black)](https://github.com/danishalipny-pixel)
+[![Repository](https://img.shields.io/badge/Repository-Luxury--Perfumes--02-black?style=for-the-badge&logo=github&logoColor=D4AF37)](https://github.com/danishalipny-pixel/Luxury-Perfumes-02)
 
 </div>

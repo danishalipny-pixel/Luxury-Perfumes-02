@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { SlidersHorizontal, X, Search, RotateCcw } from 'lucide-react';
 import { PageLayout } from '../../components/layout/PageLayout';
@@ -27,16 +27,18 @@ export const ShopPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>(searchParam);
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState<boolean>(false);
 
-  // Sync state with URL changes
-  useEffect(() => {
+  // Sync state with URL changes during render without cascading effects
+  const [prevParamsString, setPrevParamsString] = useState(searchParams.toString());
+  if (prevParamsString !== searchParams.toString()) {
+    setPrevParamsString(searchParams.toString());
     setSelectedCategory(searchParams.get('category') || 'all');
     setSelectedGender(searchParams.get('gender') || 'all');
     setSelectedFamily(searchParams.get('family') || 'all');
     setSortBy((searchParams.get('sort') as SortOption) || 'featured');
-    if (searchParams.get('search')) {
+    if (searchParams.get('search') !== null) {
       setSearchQuery(searchParams.get('search') || '');
     }
-  }, [searchParams]);
+  }
 
   // Update URL params helper
   const updateParams = (updates: Record<string, string>) => {

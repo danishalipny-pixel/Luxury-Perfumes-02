@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { Search, X, ArrowRight, Sparkles } from 'lucide-react';
 import { PageLayout } from '../../components/layout/PageLayout';
@@ -7,12 +7,15 @@ import { PRODUCTS } from '../../data/products';
 
 export const SearchResultsPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const initialQuery = searchParams.get('q') || '';
-  const [searchQuery, setSearchQuery] = useState(initialQuery);
+  const currentUrlQuery = searchParams.get('q') || '';
+  const [searchQuery, setSearchQuery] = useState(currentUrlQuery);
 
-  useEffect(() => {
-    setSearchQuery(searchParams.get('q') || '');
-  }, [searchParams]);
+  // Sync state with URL parameter changes without cascading renders
+  const [prevQuery, setPrevQuery] = useState(currentUrlQuery);
+  if (prevQuery !== currentUrlQuery) {
+    setPrevQuery(currentUrlQuery);
+    setSearchQuery(currentUrlQuery);
+  }
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();

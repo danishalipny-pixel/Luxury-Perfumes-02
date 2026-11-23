@@ -9,8 +9,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/danishalipny-pixel/Luxury-Perfumes.git
-cd Luxury-Perfumes
+git clone https://github.com/danishalipny-pixel/Luxury-Perfumes-02.git
+cd Luxury-Perfumes-02
 ```
 
 ### 2. Install Project Dependencies

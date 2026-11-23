@@ -21,12 +21,14 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark = false }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Close mobile drawer on route change
-  useEffect(() => {
+  // Close drawers and dropdowns on route change without cascading renders
+  const [prevPathname, setPrevPathname] = useState(location.pathname);
+  if (prevPathname !== location.pathname) {
+    setPrevPathname(location.pathname);
     setIsMobileMenuOpen(false);
     setIsSearchOpen(false);
     setIsShopDropdownOpen(false);
-  }, [location.pathname]);
+  }
 
   // Handle scroll detection
   useEffect(() => {

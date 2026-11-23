@@ -25,6 +25,21 @@ import type { Product } from '../../types/product';
 
 const RECENT_KEY = 'noirelle_recently_viewed_v1';
 
+const getRecentlyViewed = (currentId?: string): Product[] => {
+  try {
+    const stored = localStorage.getItem(RECENT_KEY);
+    if (!stored) return [];
+    const list: string[] = JSON.parse(stored);
+    return list
+      .filter((id) => id !== currentId)
+      .map((id) => PRODUCTS.find((p) => p.id === id))
+      .filter((p): p is Product => !!p)
+      .slice(0, 4);
+  } catch {
+    return [];
+  }
+};
+
 export const ProductDetailsPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
@@ -39,28 +54,23 @@ export const ProductDetailsPage: React.FC = () => {
   const [activeImageIndex, setActiveImageIndex] = useState<number>(0);
   const [addedToast, setAddedToast] = useState<boolean>(false);
   const [openAccordion, setOpenAccordion] = useState<'profile' | 'craft' | 'delivery' | null>('profile');
-  const [recentlyViewed, setRecentlyViewed] = useState<Product[]>(() => {
-    try {
-      const stored = localStorage.getItem(RECENT_KEY);
-      if (!stored) return [];
-      const list: string[] = JSON.parse(stored);
-      return list
-        .filter((id) => id !== product?.id)
-        .map((id) => PRODUCTS.find((p) => p.id === id))
-        .filter((p): p is Product => !!p)
-        .slice(0, 4);
-    } catch {
-      return [];
-    }
-  });
+  const [recentlyViewed, setRecentlyViewed] = useState<Product[]>(() => getRecentlyViewed(product?.id));
 
-  // Track recently viewed and reset state on product change
-  useEffect(() => {
+  // Reset local interactive state when viewed product changes
+  const [prevSlug, setPrevSlug] = useState(slug);
+  if (prevSlug !== slug) {
+    setPrevSlug(slug);
     if (product) {
       setSelectedSize(product.sizes[0]?.size || '100ml');
-      setQuantity(1);
-      setActiveImageIndex(0);
+    }
+    setQuantity(1);
+    setActiveImageIndex(0);
+    setRecentlyViewed(getRecentlyViewed(product?.id));
+  }
 
+  // Track recently viewed items in external localStorage
+  useEffect(() => {
+    if (product) {
       try {
         const stored = localStorage.getItem(RECENT_KEY);
         let list: string[] = stored ? JSON.parse(stored) : [];
@@ -68,14 +78,6 @@ export const ProductDetailsPage: React.FC = () => {
         list.unshift(product.id);
         list = list.slice(0, 6);
         localStorage.setItem(RECENT_KEY, JSON.stringify(list));
-
-        const recentProducts = list
-          .filter((id) => id !== product.id)
-          .map((id) => PRODUCTS.find((p) => p.id === id))
-          .filter((p): p is Product => !!p)
-          .slice(0, 4);
-
-        setRecentlyViewed(recentProducts);
       } catch (err) {
         console.error(err);
       }

@@ -5,7 +5,7 @@ Because NOIRÉLLE is architected as an optimized Single Page Application (SPA) w
 ## Recommended Hosting Platforms
 
 ### 1. Vercel
-1. Connect the GitHub repository `danishalipny-pixel/Luxury-Perfumes`.
+1. Connect the GitHub repository `danishalipny-pixel/Luxury-Perfumes-02`.
 2. Framework Preset: **Vite**.
 3. Build Command: `npm run build`
 4. Output Directory: `dist`
